@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            height: 20px;
+            width: 400px;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            border-radius:40px 0 40px 0px;
+        }
+
+        .container:hover{
+            border-radius: 0 40px 0 40px;
+            background: whitesmoke ;
+        }
+
+        body{
+            background-color: gainsboro ;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <hl><b>!Player!</b></hl>
+        <div onclick="tap(this.id)" id="hren1" class="container">anna-pletneva_-_devochkamaniya.mp3</div>
+        <div onclick="tap(this.id)" id="hren2" class="container">cream-soda_-_nikakih-bolshe-vecherinok.mp3</div>
+        <div onclick="tap(this.id)" id="hren3" class="container">egor-krid_-_golubye-glaza.mp3</div>
+        <div onclick="tap(this.id)" id="hren4" class="container">hammali-navai_-_ne-lyubi-menya.mp3</div>
+        <div onclick="tap(this.id)" id="hren5" class="container">olga-buzova_-_mandarinka-ft-dava.mp3</div>
+        <div onclick="tap(this.id)" id="hren6" class="container">reflex_-_only-you-ft-savage.mp3</div>
+        <div onclick="tap(this.id)" id="hren7" class="container">ruki-vverh_-_ukradi-menya.mp3</div>
+        <div onclick="tap(this.id)" id="hren8" class="container">st_-_tuman.mp3</div>
+        <div onclick="tap(this.id)" id="hren9" class="container">verbee_-_a-ty-krasivaya.mp3</div>
+        <audio src="" controls id="audio"></audio>
+    </center>
+</body>
+<script>
+    audio = document.getElementById("audio")
+
+     function tap(clicked_id) {
+        console.log(document.getElementById(clicked_id).innerHTML)
+        audio.src = document.getElementById(clicked_id).innerHTML
+    }
+</script>
+</html>
